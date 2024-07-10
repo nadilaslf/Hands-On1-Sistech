@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <script>
+        function replaceName() {
+            let nama = prompt("Halo, siapakah nama anda?", "user"); // meminta masukkan nama
+            if (nama) {
+                document.getElementById("name").innerHTML = nama; // mengganti teks dalam elemen HTML dengan nama yang dimasukkan
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            replaceName();
+        });
+    </script>
+
+    <!-- swiper -->
+     <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="/">Gradient</a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#Kelas">Kelas</a></li>
+                        <li><a href="#Perpustakaan">Perpustakaan</a></li>
+                        <li><a href="#Komunitas">Komunitas</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section id="hero">
+                <div class="hero-left">
+                    <h2>Hi <span id="name">user</span>, Welcome to Gradient!</h2>
+                    <h3 class="pre-title">Aplikasi <span>Belajar Kuliah </span> Terlengkap di Indonesia</h3>
+                    <p class="about">Dapatkan akses ke video kelas, pembahasan soal, textbook, dan rangkuman untuk membantu kamu meraih IPK idaman</p>
+                    <div class="button">
+                        <div class="button-left">
+                            <button class="button-hero">Daftar</button>
+                        </div>
+                        <div class="button-right">
+                            <button class="button-hero">Telusuri</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <img src="assets/banner-1.jpg" alt="Gradient Teacher">
+                </div>
+            </section>
+        </div>
+
+
+    </header>
+
+    <section id="kelas">
+        <!-- <div class="kelas-main-container"> -->
+            <div class="kelas-header">
+                <h3 class="content-kelas">Pilih fitur yang sesuai sama cara belajarmu</h3>
+
+                <div class="arrow-kelas">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z"/></svg>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z"/></svg>
+                </div>
+            </div>
+        
+            <!-- <div class="grid-3">
+                <! kelas 1 -->
+                 <!-- <div class="kelas">
+                    <div class="kelas-icon">
+                        
+                    </div>
+                 </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name">Kelas</h2>
+                            <p class="description">700+ video yang membahas konsep secara ringkas dan menyeluruh</p>
+
+                            <button class="button-kelas">View More</button>
+                        </div>
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/img-kelas.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name">Bank Soal</h2>
+                            <p class="description">Soal ujian asli dari berbagai universitas, beserta pembahasannya</p>
+
+                            <button class="button-kelas">View More</button>
+                        </div>
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/bank-soal.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name">Promo</h2>
+                            <p class="description">Tersedia berbagai paket dengan materi yang lengkap</p>
+
+                            <button class="button-kelas">View More</button>
+                        </div>
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/promo.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+   
+</body>
+<script src="swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+<footer>
+    <div class="id-name">
+        <h4>Create by Nadila</h4>
+    </div>
+</footer>
+</html>

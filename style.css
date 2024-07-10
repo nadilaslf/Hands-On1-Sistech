@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+body{
+    font-family: "Urbanist", sans-serif;
+    min-height: 100vh;
+    /* /* display: flex; */
+    align-items: center; 
+    justify-content: center; 
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #fff;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* header */
+
+.hero-left h2{
+    margin-bottom: 1rem;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: grey; */
+    /* background: rgb(61, 59, 59); */
+}
+
+/* logo dan navigation menu */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    /* background: rgb(35, 34, 34); */
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+/* hero section */
+#hero{
+    height: 720 px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* background: rgb(35, 34, 34); */
+}
+
+.about{
+    margin-top: 1.5rem;
+}
+
+.pre-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: o.5rem 1rem;
+}
+
+.pre-title span{
+    color: rgb(115, 62, 164);
+}
+
+.hero-right img{
+    width: 70%;
+    height: 80%;
+    float: right;
+}
+
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.button-hero{
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 9999px;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background: rgb(115, 62, 164);
+    /* margin-right: 2rem; */
+    /* gap: 4rem; */
+}
+
+/* kelas */
+.kelas-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.content-kelas{
+    display: flex;
+    align-items: center;
+    /* /* font-weight: 700; */
+    font-size: 2rem; 
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 700;
+    /* font-size: 0.9rem; */
+}
+
+.arrow-kelas{
+    list-style: none; 
+    display: flex;
+    gap: 2rem; 
+    /* background-color: #fff; */
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+} 
+
+/* display slide */
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.slide-content{
+   margin: 0 40px; 
+}
+
+.card{
+    /* width: 320px; */
+    border-radius: 25px;
+    background-color: rgb(35, 34, 34);
+    padding: 3rem 2rem;
+}
+
+.image-content,
+.card-conten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px 25px;
+}
+
+/* .overlay::before,
+.overlay::after{
+    content:  '';
+    position: absolute;
+    right: 0;
+    bottom: -40;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+
+} */
+
+/* .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: red;
+} */
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: rgb(35, 34, 34);
+    padding: 3px;
+}
+
+
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(35, 34, 34);
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 14px;
+    /* text-align: center; */
+}
+
+.button-kelas{
+    border: none;
+    font-size: 16px;
+    /* padding-top: 8px; */
+    /* background-color: red; */
+    border-radius: 6px;
+    /* margin: 1px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 0.3rem 0.3rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.button:hover{
+    background: pink;
+}
+
+.id-name{
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    text-align: right;
+    margin-bottom: 2rem;
+}
